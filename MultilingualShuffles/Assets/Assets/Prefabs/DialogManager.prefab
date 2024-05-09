@@ -1,0 +1,186 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7421053410113658097
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 929752437082219387}
+  - component: {fileID: 6678243289082698899}
+  - component: {fileID: 5520471001919117555}
+  m_Layer: 0
+  m_Name: DialogManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &929752437082219387
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7421053410113658097}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6678243289082698899
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7421053410113658097}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e686e95c9ece5544b8979fc3060bc463, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialog:
+    dialogLines:
+    - character:
+        name:
+        - Michael Stewart
+        - "\u041C\u0430\u0439\u043A\u043B \u0421\u0442\u044E\u0430\u0440\u0442"
+        icon: {fileID: 21300000, guid: c8eb150ddf7af1749b3d69d5a0e35719, type: 3}
+      line:
+      - Hey guys! What are your plans for today?
+      - "\u042D\u0439, \u0440\u0435\u0431\u044F\u0442\u0430! \u041A\u0430\u043A\u0438\u0435
+        \u0443 \u0432\u0430\u0441 \u043F\u043B\u0430\u043D\u044B \u043D\u0430 \u0441\u0435\u0433\u043E\u0434\u043D\u044F?"
+      - Hey Leute! Was haben Sie heute vor?
+    - character:
+        name:
+        - Emma Johnson
+        - "\u042D\u043C\u043C\u0430 \u0414\u0436\u043E\u043D\u0441\u043E\u043D"
+        icon: {fileID: 21300000, guid: 28b41d052b23d25478cec603d3e3ca77, type: 3}
+      line:
+      - Hey Mike! Hey Jake! We were just discussing our plans for the evening. Jake
+        here mentioned that after his last trip, he's been thinking about learning
+        a new language.
+      - "\u041F\u0440\u0438\u0432\u0435\u0442, \u041C\u0430\u0439\u043A! \u041F\u0440\u0438\u0432\u0435\u0442,
+        \u0414\u0436\u0435\u0439\u043A\u043E\u0431! \u041C\u044B \u043A\u0430\u043A
+        \u0440\u0430\u0437 \u043E\u0431\u0441\u0443\u0436\u0434\u0430\u043B\u0438
+        \u043D\u0430\u0448\u0438 \u043F\u043B\u0430\u043D\u044B \u043D\u0430 \u0432\u0435\u0447\u0435\u0440.
+        \u0414\u0436\u0435\u0439\u043A \u0443\u043F\u043E\u043C\u044F\u043D\u0443\u043B,
+        \u0447\u0442\u043E \u043F\u043E\u0441\u043B\u0435 \u0441\u0432\u043E\u0435\u0439
+        \u043F\u043E\u0441\u043B\u0435\u0434\u043D\u0435\u0439 \u043F\u043E\u0435\u0437\u0434\u043A\u0438
+        \u043E\u043D \u043F\u043E\u0434\u0443\u043C\u044B\u0432\u0430\u043B \u043E
+        \u0442\u043E\u043C, \u0447\u0442\u043E\u0431\u044B \u0432\u044B\u0443\u0447\u0438\u0442\u044C
+        \u043D\u043E\u0432\u044B\u0439 \u044F\u0437\u044B\u043A."
+      - "Hallo Mike! Hey Jude! Wir besprachen gerade unsere Pl\xE4ne f\xFCr den Abend.
+        Jake wurde erw\xE4hnt, dass er nach seiner letzten Reise dar\xFCber nachgedacht
+        hat, eine neue Sprache zu lernen."
+    - character:
+        name:
+        - Michael Stewart
+        - "\u041C\u0430\u0439\u043A\u043B \u0421\u0442\u044E\u0430\u0440\u0442"
+        icon: {fileID: 21300000, guid: c8eb150ddf7af1749b3d69d5a0e35719, type: 3}
+      line:
+      - Oh, that sounds interesting! Jake, is that true?
+      - "\u041E, \u044D\u0442\u043E \u0437\u0432\u0443\u0447\u0438\u0442 \u0438\u043D\u0442\u0435\u0440\u0435\u0441\u043D\u043E!
+        \u0414\u0436\u0435\u0439\u043A, \u044D\u0442\u043E \u043F\u0440\u0430\u0432\u0434\u0430?"
+      - "Oh, das h\xF6rt sich interessant an! Jake, ist das wahr?"
+    - character:
+        name:
+        - Jacob Miller
+        - "\u0414\u0436\u0435\u0439\u043A\u043E\u0431 \u041C\u0438\u043B\u043B\u0435\u0440"
+        icon: {fileID: 21300000, guid: 7c126f709897451409f5f5c1091c765f, type: 3}
+      line:
+      - Yeah, Mike. The trip was amazing, but I realized that knowing a new language
+        would help me communicate better with the locals in the future.
+      - "\u0414\u0430, \u041C\u0430\u0439\u043A. \u041F\u043E\u0435\u0437\u0434\u043A\u0430
+        \u0431\u044B\u043B\u0430 \u043F\u043E\u0442\u0440\u044F\u0441\u0430\u044E\u0449\u0435\u0439,
+        \u043D\u043E \u044F \u043F\u043E\u043D\u044F\u043B, \u0447\u0442\u043E \u0437\u043D\u0430\u043D\u0438\u0435
+        \u043D\u043E\u0432\u043E\u0433\u043E \u044F\u0437\u044B\u043A\u0430 \u043F\u043E\u043C\u043E\u0436\u0435\u0442
+        \u043C\u043D\u0435 \u043B\u0443\u0447\u0448\u0435 \u043E\u0431\u0449\u0430\u0442\u044C\u0441\u044F
+        \u0441 \u043C\u0435\u0441\u0442\u043D\u044B\u043C\u0438 \u0436\u0438\u0442\u0435\u043B\u044F\u043C\u0438
+        \u0432 \u0431\u0443\u0434\u0443\u0449\u0435\u043C."
+      - "Ja, Mike. Die Reise war fantastisch, aber mir wurde klar, dass die Kenntnis
+        einer neuen Sprache mir helfen w\xFCrde, in Zukunft besser mit den Einheimischen
+        zu kommunizieren."
+    - character:
+        name:
+        - Michael Stewart
+        - "\u041C\u0430\u0439\u043A\u043B \u0421\u0442\u044E\u0430\u0440\u0442"
+        icon: {fileID: 21300000, guid: c8eb150ddf7af1749b3d69d5a0e35719, type: 3}
+      line:
+      - That's a great idea! And I'm willing to help you with that. I've heard you've
+        always been passionate about traveling, so learning a new language would
+        be a great addition to your adventures.
+      - "\u042D\u0442\u043E \u043E\u0442\u043B\u0438\u0447\u043D\u0430\u044F \u0438\u0434\u0435\u044F!
+        \u0418 \u044F \u0433\u043E\u0442\u043E\u0432 \u043F\u043E\u043C\u043E\u0447\u044C
+        \u0432\u0430\u043C \u0432 \u044D\u0442\u043E\u043C. \u042F \u0441\u043B\u044B\u0448\u0430\u043B,
+        \u0447\u0442\u043E \u0432\u044B \u0432\u0441\u0435\u0433\u0434\u0430 \u0431\u044B\u043B\u0438
+        \u0443\u0432\u043B\u0435\u0447\u0435\u043D\u044B \u043F\u0443\u0442\u0435\u0448\u0435\u0441\u0442\u0432\u0438\u044F\u043C\u0438,
+        \u043F\u043E\u044D\u0442\u043E\u043C\u0443 \u0438\u0437\u0443\u0447\u0435\u043D\u0438\u0435
+        \u043D\u043E\u0432\u043E\u0433\u043E \u044F\u0437\u044B\u043A\u0430 \u0441\u0442\u0430\u043B\u043E
+        \u0431\u044B \u043E\u0442\u043B\u0438\u0447\u043D\u044B\u043C \u0434\u043E\u043F\u043E\u043B\u043D\u0435\u043D\u0438\u0435\u043C
+        \u043A \u0432\u0430\u0448\u0438\u043C \u043F\u0440\u0438\u043A\u043B\u044E\u0447\u0435\u043D\u0438\u044F\u043C."
+      - "Das ist eine tolle Idee! Und ich bin bereit, Ihnen dabei zu helfen. Ich
+        habe geh\xF6rt, dass du schon immer leidenschaftlich gereist bist, also w\xE4re
+        das Erlernen einer neuen Sprache eine gro\xDFartige Erg\xE4nzung zu deinen
+        Abenteuern."
+    - character:
+        name:
+        - Emma Johnson
+        - "\u042D\u043C\u043C\u0430 \u0414\u0436\u043E\u043D\u0441\u043E\u043D"
+        icon: {fileID: 21300000, guid: 28b41d052b23d25478cec603d3e3ca77, type: 3}
+      line:
+      - I agree with Mike too! We've talked about it, and he's really good at teaching
+        languages. Jake, I'm sure with his help, you'll quickly pick up the new language.
+      - "\u042F \u0442\u043E\u0436\u0435 \u0441\u043E\u0433\u043B\u0430\u0441\u043D\u0430
+        \u0441 \u041C\u0430\u0439\u043A\u043E\u043C! \u041C\u044B \u0433\u043E\u0432\u043E\u0440\u0438\u043B\u0438
+        \u043E\u0431 \u044D\u0442\u043E\u043C, \u0438 \u043E\u043D \u0434\u0435\u0439\u0441\u0442\u0432\u0438\u0442\u0435\u043B\u044C\u043D\u043E
+        \u0445\u043E\u0440\u043E\u0448 \u0432 \u043F\u0440\u0435\u043F\u043E\u0434\u0430\u0432\u0430\u043D\u0438\u0438
+        \u044F\u0437\u044B\u043A\u043E\u0432. \u0414\u0436\u0435\u0439\u043A, \u044F
+        \u0443\u0432\u0435\u0440\u0435\u043D\u0430, \u0447\u0442\u043E \u0441 \u0435\u0433\u043E
+        \u043F\u043E\u043C\u043E\u0449\u044C\u044E \u0442\u044B \u0431\u044B\u0441\u0442\u0440\u043E
+        \u043E\u0441\u0432\u043E\u0438\u0448\u044C \u043D\u043E\u0432\u044B\u0439
+        \u044F\u0437\u044B\u043A."
+      - "Ich stimme Mike auch zu! Wir haben dar\xFCber gesprochen, und er ist wirklich
+        gut darin, Sprachen zu unterrichten. Jake, ich bin mir sicher, dass du mit
+        seiner Hilfe die neue Sprache schnell erlernen wirst."
+    - character:
+        name:
+        - Jacob Miller
+        - "\u0414\u0436\u0435\u0439\u043A\u043E\u0431 \u041C\u0438\u043B\u043B\u0435\u0440"
+        icon: {fileID: 21300000, guid: 7c126f709897451409f5f5c1091c765f, type: 3}
+      line:
+      - Thanks, guys! It really means a lot to me. I'm looking forward to getting
+        started!
+      - "\u0421\u043F\u0430\u0441\u0438\u0431\u043E, \u0440\u0435\u0431\u044F\u0442\u0430!
+        \u042D\u0442\u043E \u0434\u0435\u0439\u0441\u0442\u0432\u0438\u0442\u0435\u043B\u044C\u043D\u043E
+        \u043C\u043D\u043E\u0433\u043E \u0437\u043D\u0430\u0447\u0438\u0442 \u0434\u043B\u044F
+        \u043C\u0435\u043D\u044F. \u042F \u0441 \u043D\u0435\u0442\u0435\u0440\u043F\u0435\u043D\u0438\u0435\u043C
+        \u0436\u0434\u0443 \u043D\u0430\u0447\u0430\u043B\u0430 \u0440\u0430\u0431\u043E\u0442\u044B!"
+      - Danke, Leute! Es bedeutet mir wirklich sehr viel. Ich freue mich auf den
+        Einstieg!
+  dialogManager: {fileID: 5520471001919117555}
+  popUpTextShown: {fileID: 0}
+--- !u!114 &5520471001919117555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7421053410113658097}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e218a8e535ce9a74a9e6a54adec3d13f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  typingSpeed: 0.05
+  characterIcon: {fileID: 0}
+  characterName: {fileID: 0}
+  dialogueArea: {fileID: 0}
+  dialogBoxAnimator: {fileID: 0}
+  buttonText: {fileID: 0}
