@@ -7,8 +7,7 @@ public class GameTimer : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI timerText;
 
-    private float gameDuration = 61f;
-    private CompositeDisposable disposable = new CompositeDisposable();
+    private float gameDuration = 61.0f;
     private GameState gameState;
 
     private void Awake()
@@ -28,7 +27,7 @@ public class GameTimer : MonoBehaviour
 
         Observable.Timer(TimeSpan.FromSeconds(duration))
             .Subscribe(_ => OnTimeUp())
-            .AddTo(disposable);
+            .AddTo(this);
 
         Observable.EveryUpdate()
             .Select(_ => endTime - Time.time)
@@ -37,16 +36,11 @@ public class GameTimer : MonoBehaviour
             .Subscribe(timeRemaining => {
                 timerText.SetText($"Time left: {(int)timeRemaining}");
             })
-            .AddTo(disposable);
+            .AddTo(this);
     }
 
     private void OnTimeUp()
     {
         gameState.OnPlayerDeath();
-    }
-
-    private void OnDestroy()
-    {
-        disposable.Dispose();
     }
 }

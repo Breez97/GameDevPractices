@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 public class GameState : MonoBehaviour
 {
     [SerializeField] private GameObject menuDeath;
-
     public ReactiveProperty<int> CoinCount { get; private set; } = new ReactiveProperty<int>(0);
     public ReactiveCommand IncrementCoinCountCommand { get; private set; }
     public ReactiveProperty<int> Health { get; private set; } = new ReactiveProperty<int>(3);
